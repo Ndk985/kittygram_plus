@@ -2,6 +2,7 @@ from rest_framework import serializers
 import datetime as dt
 from .models import Cat, Owner, Achievement, AchievementCat, CHOICES
 import webcolors
+from djoser.serializers import UserSerializer
 
 
 class Hex2NameColor(serializers.Field):
